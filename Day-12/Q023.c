@@ -1,0 +1,15 @@
+/* Day 12 | 25 August 2026 | Question 1 */
+/*
+Q23 - Conditional Statements
+Write a program to calculate library fine based on late days as follows: 
+First 5 days late: ₹2/day 
+Next 5 days late: ₹4/day 
+Next 20 days days late: ₹6/day 
+More than 30 days: Membership Cancelled.
+*/
+#include <stdio.h>
+
+int main(void) {
+    int d; scanf("%d",&d); if(d<0) puts("Invalid"); else if(d>30) puts("Membership Cancelled"); else {int fine=0; if(d<=5) fine=2*d; else if(d<=10) fine=10+4*(d-5); else fine=30+6*(d-10); printf("Fine = %d\n",fine);}
+    return 0;
+}
