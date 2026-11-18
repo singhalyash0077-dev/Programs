@@ -1,0 +1,16 @@
+/* Day 26 | 08 September 2026 | Question 1 */
+/*
+Q51 - Nested Loops without Arrays/Strings
+Write a program to print the following pattern:
+    5
+   45
+  345
+ 2345
+12345
+*/
+#include <stdio.h>
+
+int main(void) {
+    for(int i=5;i>=1;i--){for(int s=1;s<i;s++)putchar(' ');for(int j=i;j<=5;j++)printf("%d",j);putchar('\n');}
+    return 0;
+}
